@@ -51,6 +51,55 @@
         <button onclick="postRecord()">Cadastrar</button>
         <ul id="listByPost"></ul>
     </section>
+    <hr>
+    <section>
+        <head>
+            <h2>
+                Editar
+            </h2>
+        </head> 
+
+        <h3>Buscar:</h3>
+        <label>
+            Id:
+            <input type="number" id="idRecordToEdit"/>
+        </label>
+        <button onclick="getRecordToEdit()">Buscar</button>
+
+        <h3>Editar:</h3>
+        <label>
+            Nome:
+            <input type="text" id="nameRecordEdit"/>
+        </label>
+        <label>
+            Idade:
+            <input type="number" id="ageRecordEdit"/>
+        </label>
+        <button onclick="putRecord()">Editar</button>
+        
+        <ul id="listByPost"></ul>
+    </section>
+
+    <hr>
+    <section>
+        <head>
+            <h2>
+                Deletar
+            </h2>
+        </head> 
+
+        <label>
+            Id:
+            <input type="number" id="idRecordToDelete"/>
+        </label>
+        <button onclick="deleteRecord()">Deletar</button>
+    </section>
+    <hr>
+    <footer>
+        <center>
+            Use esses exemplos e os apromore, fico a disposição para tirar dúvidas.
+        </center>
+    </footer>
 </body>
 <script src="./index.js"></script>
 </html>

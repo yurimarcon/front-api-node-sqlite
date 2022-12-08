@@ -1,0 +1,56 @@
+<html lang="pt-br">
+<header>
+    <title>Front API</title>
+</header>
+<body>
+    <head>
+        <h1>
+            Testando API sqlite
+        </h1>
+    </head>
+    <hr>
+    <section>
+        <head>
+            <h2>
+                Todos os registros
+            </h2>
+        </head>
+        
+        <ul id="listAllRecords"></ul>
+    </section>
+    <hr>
+    <section>
+        <head>
+            <h2>
+                Buscar por id
+            </h2>
+        </head> 
+
+        <label>Id:</label>
+        <input type="number" id="idRecord"/>
+        <button onclick="getById()">Buscar</button>
+
+        <ul id="listById"></ul>
+    </section>
+    <hr>
+    <section>
+        <head>
+            <h2>
+                Cadastrar
+            </h2>
+        </head> 
+        
+        <label>
+            Nome:
+            <input type="text" id="nameRecord"/>
+        </label>
+        <label>
+            Idade:
+            <input type="number" id="ageRecord"/>
+        </label>
+        <button onclick="postRecord()">Cadastrar</button>
+        <ul id="listByPost"></ul>
+    </section>
+</body>
+<script src="./index.js"></script>
+</html>
